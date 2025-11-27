@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #4a5568;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-bottom: 4px solid rgb(52, 152, 219);
+            height:200px
+        }
+        .logo {
+            max-width: 200px;
+            height: auto;
+        }
+
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 19px;
+            font-weight: 300;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0 15px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 15px;
+        }
+
+        /* Three Column Layout */
+        .three-column {
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+
+        .column {
+            width: 32%;
+            float: left;
+            margin-right: 2%;
+            background: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .column:last-child {
+            margin-right: 0;
+        }
+
+        .three-column:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column h2 {
+            color: #2c5282;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #2c5282;
+        }
+
+        .column ul {
+            list-style-position: inside;
+            margin-top: 15px;
+        }
+
+        .column li {
+            margin-bottom: 8px;
+            padding-left: 8px;
+        }
+
+        /* About Section */
+        .about-section {
+            background: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .about-section h2 {
+            color: #2c5282;
+            margin-bottom: 15px;
+            font-size: 29px;
+        }
+
+        .about-section p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        /* Skills List */
+        .skills-list {
+            margin-top: 15px;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: #4a5568;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 45px;
+        }
+
+        footer a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="logo.png" alt="Arber Buzhala Professional Logo" class="logo">
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resumeUpdated.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <!-- About Me Section -->
+    <section class="about-section">
+        <h2>About Me</h2>
+        <p>Hello! I'm a passionate Computer Science student at SUNY Brockport with a strong foundation in web development and digital technologies. I am dedicated to creating innovative solutions that make a meaningful impact for people and businesses.</p>
+        <p>Throughout my academic journey, I have developed a comprehensive skill set spanning front-end and back-end development, with hands-on experience in modern programming languages and frameworks. I thrive on learning new technologies and applying them to solve real-world problems.</p>
+        <p>I am actively seeking opportunities to contribute my skills to dynamic teams where I can continue to grow as a developer while delivering quality solutions.</p>
+    </section>
+
+    <!-- Three Column Layout -->
+    <div class="three-column">
+        <!-- Column 1: Education -->
+        <div class="column">
+            <h2>Education</h2>
+            <h3>B.S. Computer Science</h3>
+            <p><strong>SUNY Brockport</strong><br>Expected Graduation: 2026</p>
+
+            <h3 style="margin-top: 1.5rem;">A.S. Computer Science</h3>
+            <p><strong>Monroe Community College</strong><br>Graduation: 2025</p>
+
+            <p style="margin-top: 1.5rem;"><strong>Relevant Coursework:</strong></p>
+            <ul>
+                <li>Web Development</li>
+                <li>UI Design</li>
+                <li>Data Structures</li>
+                <li>Software Engineering</li>
+                <li>Algorithms</li>
+            </ul>
+        </div>
+
+        <!-- Column 2: Interests & Goals -->
+        <div class="column">
+            <h2>Interests</h2>
+            <ul>
+                <li><strong>Java Programming:</strong> Building robust applications</li>
+                <li><strong>Embedded Systems:</strong> IoT and hardware integration</li>
+                <li><strong>Machine Learning:</strong> AI and data science</li>
+                <li><strong>Full-Stack Development:</strong> End-to-end solutions</li>
+            </ul>
+
+            <h3 style="margin-top: 1.5rem;">Career Goals</h3>
+            <p>I aim to secure a position as a software developer where I can contribute to innovative projects while continuing to expand my technical expertise. I'm particularly interested in roles that involve:</p>
+            <ul>
+                <li>Web application development</li>
+                <li>Problem-solving and innovation</li>
+                <li>Collaborative team environments</li>
+                <li>Continuous learning opportunities</li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Skills -->
+        <div class="column">
+            <h2>Technical Skills</h2>
+            <h3>Programming Languages</h3>
+            <div class="skills-list">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Python</span>
+            </div>
+
+            <h3 style="margin-top: 1.5rem;">Web Technologies</h3>
+            <div class="skills-list">
+                <span class="skill-tag">Responsive Design</span>
+                <span class="skill-tag">UI/UX</span>
+                <span class="skill-tag">Git/GitHub</span>
+            </div>
+
+            <h3 style="margin-top: 1.5rem;">Soft Skills</h3>
+            <ul>
+                <li>Problem Solving</li>
+                <li>Team Collaboration</li>
+                <li>Time Management</li>
+                <li>Attention to Detail</li>
+                <li>Adaptability</li>
+                <li>Communication</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Website URL Section -->
+    <section class="about-section">
+        <h2>Website Information</h2>
+        <p><strong>Main Page URL:</strong> <a href="index.html" style="color: #667eea;">https://index.html</a></p>
+        <p><em>(Replace with your actual hosted website URL once published)</em></p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Your Name. All rights reserved.</p>
+    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a> |
+        LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a> |
+        GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+</footer>
+</body>
+</html>

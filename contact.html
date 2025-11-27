@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Get In Touch</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 4px solid #3498db;
+            height: 200px;
+        }
+
+        .logo {
+            max-width: 200px;
+            height: auto;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            background: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #2c5282;
+            margin-bottom: 15px;
+            font-size: 26px;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        form button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 45px;
+        }
+
+        footer a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        .radio-group label {
+            font-weight: normal;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Arber Buzhala Professional Logo" class="logo">
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resumeUpdated.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <!-- Intro Section -->
+    <section class="section">
+        <h2>Contact Me</h2>
+        <p>Thank you for your interest! I'm always excited to discuss new opportunities, potential collaborations, or answer any questions you may have. Please fill out the form below and I'll get back to you as soon as possible.</p>
+        <p>Whether you're looking to hire a dedicated developer, need assistance with a project, or simply want to connect, I'd love to hear from you!</p>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section">
+        <h2>Contact Form</h2>
+        <form action="https://formspree.io/f/xzzlryze" method="POST">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="(123) 456-7890">
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject">
+
+            <label for="reason">Reason for Contact:</label>
+            <select id="reason" name="reason">
+                <option value="job">Job Opportunity</option>
+                <option value="project">Project Collaboration</option>
+                <option value="freelance">Freelance Work</option>
+                <option value="question">General Question</option>
+                <option value="other">Other</option>
+            </select>
+
+            <p>Preferred Contact Method:</p>
+            <div style="display:flex; gap:15px; align-items:center; margin-bottom:15px;">
+                <label><input type="radio" name="contact_method" value="email" checked> Email</label>
+                <label><input type="radio" name="contact_method" value="phone"> Phone</label>
+                <label><input type="radio" name="contact_method" value="either"> Either</label>
+            </div>
+
+            <label for="best_time">Best Time to Contact:</label>
+            <select id="best_time" name="best_time">
+                <option value="morning">Morning (9am - 12pm)</option>
+                <option value="afternoon">Afternoon (12pm - 5pm)</option>
+                <option value="evening">Evening (5pm - 8pm)</option>
+                <option value="anytime">Anytime</option>
+            </select>
+
+            <label for="message">Message/Question:</label>
+            <textarea id="message" name="message" rows="8"></textarea>
+
+            <!-- Redirect after submission -->
+            <input type="hidden" name="_next" value="saved.html">
+
+            <button type="submit">Submit Form</button>
+            <button type="reset">Clear Form</button>
+        </form>
+    </section>
+
+    <!-- Other Contact Info Section -->
+    <section class="section">
+        <h2>Other Ways to Reach Me</h2>
+        <p>If you prefer not to use the form, you can also reach me through:</p>
+        <ul>
+            <li>Email: <a href="mailto:abuzh1@brockport.edu">abuzh1@brockport.edu</a></li>
+            <li>Phone: (123) 456-7890</li>
+        </ul>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 Arber Buzhala. All rights reserved.</p>
+    <p>Email: <a href="mailto:abuzh1@brockport.edu">abuzh1@brockport.edu</a></p>
+</footer>
+
+</body>
+</html>
