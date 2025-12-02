@@ -1,145 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- META TAGS  -->
     <meta charset="UTF-8">
+    <meta name="description" content="Professional portfolio of Arber Buzhala, Computer Science student at SUNY Brockport.">
+    <meta name="keywords" content="Arber Buzhala, portfolio, computer science, developer, SUNY Brockport, programmer">
+    <meta name="author" content="Arber Buzhala">
+
+    <!-- RESPONSIVE VIEWPORT for mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Professional Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background: #4a5568;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            border-bottom: 4px solid rgb(52, 152, 219);
-            height: 200px;
-        }
-
-        .logo {
-            max-width: 200px;
-            height: auto;
-        }
-
-        nav {
-            background-color: #333;
-            padding: 15px 0;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style: none;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 30px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 0 15px;
-        }
-
-        /* ---- SIMPLE RESPONSIVE THREE COLUMNS ---- */
-        .three-column {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-
-        .column {
-            flex: 1;
-            min-width: 250px;
-            background: white;
-            padding: 30px;
-            border-radius: 5px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        /* ------------------------------------------ */
-
-        .column h2 {
-            color: #2c5282;
-            margin-bottom: 15px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid #2c5282;
-        }
-
-        .column ul {
-            list-style-position: inside;
-            margin-top: 15px;
-        }
-
-        .column li {
-            margin-bottom: 8px;
-            padding-left: 8px;
-        }
-
-        .about-section {
-            background: white;
-            padding: 30px;
-            border-radius: 5px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .about-section h2 {
-            color: #2c5282;
-            margin-bottom: 15px;
-            font-size: 29px;
-        }
-
-        .skills-list {
-            margin-top: 15px;
-        }
-
-        .skill-tag {
-            display: inline-block;
-            background: #4a5568;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 5px;
-            font-size: 14px;
-            margin-right: 15px;
-            margin-bottom: 15px;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 30px 0;
-            margin-top: 45px;
-        }
-
-        footer a {
-            color: #4a90e2;
-            text-decoration: none;
-        }
-    </style>
+    <!-- EXTERNAL CSS FILE -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -147,6 +21,7 @@
     <img src="logo.png" alt="Arber Buzhala Professional Logo" class="logo">
 </header>
 
+<!-- NAVIGATION MENU -->
 <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
@@ -158,11 +33,13 @@
 
 <div class="container">
 
-    <section class="about-section">
+    <!-- INTRO SECTION -->
+    <div class="about-section">
         <p>Hi! I'm a Computer Science student at SUNY Brockport who loves building things and solving problems with code.</p>
         <p>I'm looking for opportunities to work with great teams and grow my skills as a developer.</p>
-    </section>
+    </div>
 
+    <!-- LAYOUT SECTION -->
     <div class="three-column">
 
         <div class="column">
@@ -217,16 +94,19 @@
 
     </div>
 
-    <section class="about-section">
-        <p><strong>Main Page URL:</strong> <a href="https://arberbuzhala.github.io/" style="color: #667eea;">https://arberbuzhala.github.io</a></p>
-    </section>
+    <div class="about-section">
+        <p><strong>Main Page URL:</strong>
+            <a href="https://arberbuzhala.github.io/" style="color: #667eea;">
+                https://arberbuzhala.github.io
+            </a>
+        </p>
+    </div>
 </div>
 
+<!-- FOOTER SECTION -->
 <footer>
     <p>&copy; 2025 Arber Buzhala. All rights reserved.</p>
 </footer>
 
 </body>
 </html>
-
-

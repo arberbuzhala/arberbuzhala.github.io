@@ -3,146 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Get In Touch</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background: #4a5568;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            border-bottom: 4px solid rgb(52, 152, 219);
-            height: 200px;
-        }
-
-        .logo {
-            max-width: 200px;
-            height: auto;
-        }
-
-        nav {
-            background-color: #333;
-            padding: 15px 0;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0 15px;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 30px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-
-        .section {
-            background: white;
-            padding: 30px;
-            border-radius: 5px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
-        }
-
-        .section h2 {
-            color: #2c5282;
-            margin-bottom: 15px;
-            font-size: 26px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid #2c5282;
-        }
-
-        .section p {
-            margin-bottom: 15px;
-            line-height: 1.8;
-        }
-
-        form label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        form input, form select, form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-        form button {
-            background-color: rgb(52, 152, 219);
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-right: 10px;
-            font-size: 16px;
-        }
-
-        form button:hover {
-            background-color: #2980b9;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 30px 0;
-            margin-top: 45px;
-        }
-
-        footer a {
-            color: #4a90e2;
-            text-decoration: none;
-        }
-
-        .radio-group label {
-            font-weight: normal;
-            margin-right: 15px;
-        }
-
-        .section ul {
-            margin-left: 20px;
-        }
-
-        .section li {
-            margin-bottom: 8px;
-        }
-
-        .section a {
-            color: rgb(52, 152, 219);
-            text-decoration: none;
-        }
-    </style>
+    <meta name="description" content="Contact Arber Buzhala - Computer Science student and developer. Get in touch for job opportunities, collaborations, or questions.">
+    <meta name="keywords" content="contact, Arber Buzhala, developer, computer science, hire developer">
+    <meta name="author" content="Arber Buzhala">
+    <title>Contact - Arber Buzhala</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <header>
@@ -161,30 +28,31 @@
 <div class="container">
 
     <!-- Intro Section -->
-    <section class="section">
+    <div class="section">
         <h2>Contact Me</h2>
         <p>Thank you for your interest! I'm always excited to discuss new opportunities, potential collaborations, or answer any questions you may have. Please fill out the form below and I'll get back to you as soon as possible.</p>
         <p>Whether you're looking to hire a dedicated developer, need assistance with a project, or simply want to connect, I'd love to hear from you!</p>
-    </section>
+    </div>
 
     <!-- Contact Form Section -->
-    <section class="section">
+    <div class="section">
         <h2>Contact Form</h2>
         <form action="https://formspree.io/f/xzzlryze" method="POST">
             <label for="fullname">Full Name:</label>
-            <input type="text" id="fullname" name="fullname">
+            <input type="text" id="fullname" name="fullname" required>
 
             <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" required>
 
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" required placeholder="(123) 456-7890">
 
             <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject">
+            <input type="text" id="subject" name="subject" required>
 
             <label for="reason">Reason for Contact:</label>
-            <select id="reason" name="reason">
+            <select id="reason" name="reason" required>
+                <option value="">Select a reason...</option>
                 <option value="job">Job Opportunity</option>
                 <option value="project">Project Collaboration</option>
                 <option value="freelance">Freelance Work</option>
@@ -192,8 +60,8 @@
                 <option value="other">Other</option>
             </select>
 
-            <p>Preferred Contact Method:</p>
-            <div style="display:flex; gap:15px; align-items:center; margin-bottom:15px;">
+            <label>Preferred Contact Method:</label>
+            <div class="radio-group">
                 <label><input type="radio" name="contact_method" value="email" checked> Email</label>
                 <label><input type="radio" name="contact_method" value="phone"> Phone</label>
                 <label><input type="radio" name="contact_method" value="either"> Either</label>
@@ -201,32 +69,32 @@
 
             <label for="best_time">Best Time to Contact:</label>
             <select id="best_time" name="best_time">
+                <option value="anytime">Anytime</option>
                 <option value="morning">Morning (9am - 12pm)</option>
                 <option value="afternoon">Afternoon (12pm - 5pm)</option>
                 <option value="evening">Evening (5pm - 8pm)</option>
-                <option value="anytime">Anytime</option>
             </select>
 
             <label for="message">Message/Question:</label>
-            <textarea id="message" name="message" rows="8"></textarea>
+            <textarea id="message" name="message" rows="8" required></textarea>
 
             <!-- Redirect after submission -->
             <input type="hidden" name="_next" value="saved.html">
 
-            <button type="submit">Submit Form</button><br></br><br></br>
+            <button type="submit">Submit Form</button>
             <button type="reset">Clear Form</button>
         </form>
-    </section>
+    </div>
 
     <!-- Other Contact Info Section -->
-    <section class="section">
+    <div class="section">
         <h2>Other Ways to Reach Me</h2>
         <p>If you prefer not to use the form, you can also reach me through:</p>
         <ul>
             <li>Email: <a href="mailto:abuzh1@brockport.edu">abuzh1@brockport.edu</a></li>
-            <li>Phone: (347) 664 2800</li>
+            <li>Phone: <a href="tel:+13476642800">(347) 664-2800</a></li>
         </ul>
-    </section>
+    </div>
 
 </div>
 
@@ -235,7 +103,4 @@
 </footer>
 
 </body>
-
 </html>
-
-
