@@ -1,16 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of web development projects, programming samples, and technical work showcasing skills in Java, Python, C++, web development, and software engineering">
-    <meta name="keywords" content="web development projects, programming portfolio, Java projects, Python projects, software samples, technical portfolio, computer science student">
+    <meta name="description" content="Projects portfolio of Arber Buzhala – embedded systems, Android, and software development.">
+    <meta name="keywords" content="embedded systems, STM32, Android, Kotlin, Java, Python, Arber Buzhala, portfolio">
     <meta name="author" content="Arber Buzhala">
     <title>Projects - Arber Buzhala</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+
 <header>
     <img src="logo.png" alt="Arber Buzhala Professional Logo" class="logo">
 </header>
@@ -25,33 +26,58 @@
 </nav>
 
 <div class="container">
-    <!-- Page Title -->
+
     <div class="page-title">
         <h1>Featured Projects</h1>
     </div>
 
-    <!-- Project 1 -->
+    <!-- STM32 Embedded System -->
     <div class="project-card">
-        <h3>Android Applications</h3>
+        <h3>STM32 Embedded System</h3>
         <p>
-            <strong>Technologies:</strong> Kotlin, Jetpack Compose, Android Studio<br>
+            <strong>Technologies:</strong> C, STM32 Nucleo F401RE, arm-none-eabi toolchain, Linux
         </p>
         <p>
-            Developed native Android applications using Kotlin and Jetpack Compose, implementing modern Android development practices and declarative UI design patterns. Created functional mobile apps with intuitive user experiences.
+            Developed low-level firmware for an STM32 Nucleo F401RE, configuring GPIO, RCC clocks, and peripheral registers directly in C. Controlled both the onboard and an external LED, and resolved hardware and toolchain issues during development.
+        </p>
+    </div>
+
+    <!-- Matrix Calculator Android App -->
+    <div class="project-card">
+        <h3>Matrix Calculator — Android App</h3>
+        <p>
+            <strong>Technologies:</strong> Kotlin, Jetpack Compose, Android Studio
         </p>
         <p>
-            <strong>Key Features:</strong> Jetpack Compose UI framework, state management, lifecycle management, responsive layouts, and efficient data handling for mobile devices.
+            Built and shipped a full-featured matrix calculator app implementing custom linear algebra algorithms from scratch. Features eigenvalue computation, determinants, matrix inverses, and graph isomorphism checking, all wrapped in a clean Compose UI.
         </p>
-         <p>
-            <strong> Try my free Matrix Calculator</strong><br>
+        <p>
+            <strong>Key Features:</strong> Custom linear algebra engine, Jetpack Compose declarative UI, state management, published and available on Google Play.
+        </p>
+        <p>
+            <strong>Try it free:</strong><br>
             <a href="https://play.google.com/store/apps/details?id=com.arberbuzhala.linalgebra"
                target="_blank" rel="noopener noreferrer">
-                <img src="playStore.png" alt="Get LinAlgebra on Google Play" width="150">
+                <img src="playStore.png" alt="Get Matrix Calculator on Google Play" width="150">
             </a>
         </p>
     </div>
 
-    <!-- Project 2 -->
+    <!-- Assembly & Digital Logic -->
+    <div class="project-card">
+        <h3>Assembly Language & Digital Logic</h3>
+        <p>
+            <strong>Technologies:</strong> Assembly Language, Microcontrollers, Breadboard Electronics
+        </p>
+        <p>
+            Worked from first principles up — designed and built SR latches, oscillators, and half-adders using discrete transistors on breadboards, then implemented a 4-bit full adder using ICs. Later programmed a DragonBoard microcontroller to drive an RC car autonomously using ultrasonic sensor readings.
+        </p>
+        <p>
+            <strong>Key Features:</strong> Transistor-level digital logic, IC integration, assembly language programming, sensor-driven autonomous control.
+        </p>
+    </div>
+
+    <!-- Database Project -->
     <div class="project-card">
         <h3>Database Management System Project</h3>
         <p>
@@ -59,14 +85,14 @@
             <strong>Course:</strong> Design/Implementation of DBMS (CIS 422 - Fall 2025)
         </p>
         <p>
-            Designed and implemented a relational database system with focus on normalization, query optimization, and efficient data retrieval. Applied theoretical concepts to practical database design challenges.
+            Designed and implemented a relational database system with focus on normalization, query optimization, and efficient data retrieval.
         </p>
         <p>
-            <strong>Key Features:</strong> Normalized database schema, complex SQL queries with joins and subqueries, stored procedures, and transaction management for data integrity.
+            <strong>Key Features:</strong> Normalized schema design, complex SQL queries with joins and subqueries, stored procedures, and transaction management.
         </p>
     </div>
 
-    <!-- Project 3 -->
+    <!-- Advanced Java -->
     <div class="project-card">
         <h3>Advanced Java Programming Applications</h3>
         <p>
@@ -74,56 +100,32 @@
             <strong>Course:</strong> Advanced Java Programming (Monroe CC - Fall 2024)
         </p>
         <p>
-            Created multiple Java applications demonstrating advanced programming concepts including inheritance, polymorphism, exception handling, and GUI development. Implemented design patterns and best practices for maintainable code.
+            Built multiple Java applications covering OOP principles, GUI development, and design patterns. Projects included a matrix calculator, quadratic formula solver, derivative/antiderivative solver, pair-matching tool, and a GUI-based database interface.
         </p>
         <p>
-            <strong>Key Features:</strong> Object-oriented design, event-driven programming, file I/O operations, and comprehensive error handling throughout applications.
-        </p>
-        <p>
-            Built several interactive GUI-based applications including simple games, a <strong>matrix calculator</strong>, a <strong>quadratic formula solver</strong>, a derivative/antiderivative solver, a pair-matching tool for numbers or strings, and a GUI-based database interface.
+            <strong>Key Features:</strong> Object-oriented design, event-driven programming, file I/O, and GUI development.
         </p>
     </div>
 
-    <!-- Project 4 -->
-    <div class="project-card">
-        <h3>Assembly Language & Embedded Systems</h3>
-        <p>
-            <strong>Technologies:</strong> Assembly Language, Microcontrollers<br>
-            <strong>Course:</strong> Assembly Language Programming/Embedded Systems/Digital Computer Organization
-        </p>
-        <p>
-            Programmed microcontrollers using assembly language to control hardware components and implement low-level system operations. Gained deep understanding of computer architecture and how software interacts with hardware.
-        </p>
-        <p>
-            <strong>Key Features:</strong> Direct hardware manipulation, memory management, interrupt handling, and optimization for resource-constrained systems.
-        </p>
-        <p>
-            Designed and built <strong>SR latches</strong>, <strong>oscillators</strong>, and <strong>half-adders using transistors only</strong> on breadboards. Later implemented a <strong>4-bit full adder using integrated circuits (ICs)</strong>. Integrated the DragonBoard microcontroller from CSC 202 into an RC Ferrari car, programming it to move autonomously based on ultrasonic sensor readings.
-        </p>
-    </div>
-
-    <!-- Project 5 -->
+    <!-- Python Projects -->
     <div class="project-card">
         <h3>Python Programming Projects</h3>
         <p>
-            <strong>Technologies:</strong> Python, Data Structures, Algorithms<br>
+            <strong>Technologies:</strong> Python<br>
             <strong>Course:</strong> Introduction to Computing (Monroe CC - Fall 2023)
         </p>
         <p>
-            Developed various Python applications demonstrating proficiency in scripting, data manipulation, and algorithm implementation. Utilized Python's extensive standard library for solving computational problems.
+            First programming projects — built Wordle, Hangman, and QuickDraw (a Keno-style number game) in Python, which established the foundation for logic, loops, and user interaction.
         </p>
         <p>
-            <strong>Key Features:</strong> Data processing scripts, algorithmic problem solving, file handling, and implementation of fundamental data structures.
-        </p>
-        <p>
-            As my introduction to programming, I created several simple games including <strong>Wordle</strong>, <strong>Hangman</strong>, and <strong>QuickDraw</strong>, which built the foundation for my understanding of logic, loops, and user interaction.
+            <strong>Key Features:</strong> Game logic, user input handling, algorithmic problem solving, file handling.
         </p>
     </div>
+
 </div>
 
 <footer>
     <p>&copy; 2025 Arber Buzhala. All rights reserved.</p>
 </footer>
 </body>
-
 </html>
